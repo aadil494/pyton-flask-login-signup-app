@@ -1,4 +1,4 @@
-## Flask Simple Login-Signup app without any  Extensions
+## Flask Simple Login-Signup app 
 
 ## Getting Started
 
