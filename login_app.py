@@ -113,7 +113,13 @@ def user_home(username):
         flask.abort(401)
   
     return flask.render_template("user_home.html", username=username)
+@app.route("/explore/<username>/", methods=["GET", "POST"])
+def explore(username):
 
+    if not flask.session.get(username):
+        flask.abort(401)
+  
+    return flask.render_template("explore.html", username=username)
 
 @app.route("/logout/<username>")
 def logout(username):
